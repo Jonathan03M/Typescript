@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .menu {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .menu button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .calculator,
+  .contador,
+  .tabla,
+  .fibonacci,
+  .temperatura,
+  .contadorPalabras {
+    display: none;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .calculator label,
+  .contador label,
+  .tabla label,
+  .fibonacci label,
+  .temperatura label,
+  .contadorPalabras label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .calculator input[type="number"],
+  .contador input[type="number"],
+  .calculator select,
+  .tabla input[type="number"],
+  .fibonacci input[type="number"],
+  .temperatura input[type="number"],
+  .contadorPalabras input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .calculator button,
+  .contador button,
+  .tabla button,
+  .fibonacci button,
+  .temperatura button,
+  .contadorPalabras button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .calculator button:hover,
+  .contador button:hover,
+  .tabla button:hover,
+  .fibonacci button:hover,
+  .temperatura button:hover,
+  .contadorPalabras button:hover {
+    background-color: #0056b3;
+  }
+  
+  .resultado,
+  .resultadoContador,
+  .resultadoTabla,
+  .resultadoFibonacci,
+  .resultadoConversion,
+  .resultadoContadorPalabras {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

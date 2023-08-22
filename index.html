@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Actividades</title>
+</head>
+<body>
+  <div class="menu" id="menu">
+    <h2>Seleccione una actividad:</h2>
+    <button id="opcionCalculadora">Calculadora Simple</button>
+    <button id="opcionContador">Contador de Números Pares e Impares</button>
+    <button id="opcionTabla">Tabla de Multiplicar</button>
+    <button id="opcionFibonacci">Secuencia de Fibonacci</button> 
+    <button id="opcionTemperatura">Conversor de Temperatura</button> 
+    <button id="opcionPalabra">Contador de Palabras</button> 
+  </div>
+  <div class="calculator" id="calculadora" style="display: none;">
+    <h2>Calculadora</h2>
+    <label for="num1">Primer número:</label>
+    <input type="number" id="num1">
+    <label for="num2">Segundo número:</label>
+    <input type="number" id="num2">
+    <label for="oper">Operación:</label>
+    <select id="oper">
+      <option value="suma">Suma</option>
+      <option value="resta">Resta</option>
+      <option value="multiplicacion">Multiplicación</option>
+      <option value="division">División</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <p id="resultado"></p>
+  </div>
+  <div class="contador" id="contador" style="display: none;">
+    <h2>Contador de Números Pares e Impares</h2>
+    <label for="inicio">Número de inicio:</label>
+    <input type="number" id="inicio">
+    <label for="fin">Número final:</label>
+    <input type="number" id="fin">
+    <button id="contar">Contar</button>
+    <p id="resultadoContador"></p>
+  </div>
+  <div class="tabla" id="tabla">
+    <h2>Tabla de Multiplicar</h2>
+    <label for="numeroTabla">Número:</label>
+    <input type="number" id="numeroTabla">
+    <button id="generarTabla">Generar Tabla</button>
+    <p id="resultadoTabla"></p>
+  </div>
+  <div class="fibonacci" id="fibonacci" style="display: none;">
+    <h2>Secuencia de Fibonacci</h2>
+    <label for="numeroFibonacci">Numero:</label>
+    <input type="number" id="numeroFibonacci">
+    <button id="generarFibonacci">Generar Secuencia</button>
+    <p id="resultadoFibonacci"></p>
+  </div>
+  <div class="temperatura" id="temperatura" style="display: none;">
+    <h2>Convertidor de Temperatura</h2>
+    <label for="celsius">Grados Celsius:</label>
+    <input type="number" id="celsius">
+    <button id="convertirCelsius">Convertir a Fahrenheit</button>
+    <label for="fahrenheit">Grados Fahrenheit:</label>
+    <input type="number" id="fahrenheit">
+    <button id="convertirFahrenheit">Convertir a Celsius</button>
+    <p id="resultadoConversion"></p>
+  </div>
+  <div class="contadorPalabras" id="contadorPalabras" style="display: none;">
+    <h2>Contador de Palabras</h2>
+    <label for="oracion">Ingrese una oración:</label>
+    <input type="text" id="oracion">
+    <button id="contarPalabras">Contar Palabras</button>
+    <p id="resultadoContadorPalabras"></p>
+  </div>
+ 
+
+  <script type="module" src="src/main.ts"></script>
+</body>
+</html>
